@@ -11,7 +11,11 @@ namespace unidad_2_practica_7
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            string nombre;
+            string apellido;
+            nombre = Request["tbNombre"].ToString();
+            apellido = ((TextBox)PreviousPage.FindControl("tbApellido")).Text;
+            lblNombreCompleto.Text = nombre + " " + apellido;
         }
     }
 }

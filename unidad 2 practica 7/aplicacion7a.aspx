@@ -9,8 +9,15 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-        </div>
+        
+        <asp:Label ID="lblNombre" runat="server" style="font-weight: 700" Text="Ingrese su nombre:"></asp:Label>
+        <asp:TextBox ID="tbNombre" runat="server"></asp:TextBox>
+        <br />
+        <asp:Label ID="lblApellido" runat="server" style="font-weight: 700" Text="Ingrese su apellido:"></asp:Label>
+        <asp:TextBox ID="tbApellido" runat="server"></asp:TextBox>
+        <br />
+        <asp:Button ID="btnAceptar" runat="server" OnClick="btnAceptar_Click" Text="Aceptar" />
+        
     </form>
 </body>
 </html>

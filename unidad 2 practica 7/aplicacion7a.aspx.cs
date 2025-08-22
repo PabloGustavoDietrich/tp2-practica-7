@@ -13,5 +13,10 @@ namespace unidad_2_practica_7
         {
 
         }
+
+        protected void btnAceptar_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("aplicacion 7b.aspx");
+        }
     }
 }
